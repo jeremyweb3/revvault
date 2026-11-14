@@ -1,0 +1,336 @@
+[
+ {
+  "name": "steady-diversified",
+  "routed_share_bps": 10000,
+  "inflows": [
+   {
+    "day": 100,
+    "amount": "80000000",
+    "payer": "payer0.testnet"
+   },
+   {
+    "day": 101,
+    "amount": "80000000",
+    "payer": "payer1.testnet"
+   },
+   {
+    "day": 102,
+    "amount": "80000000",
+    "payer": "payer2.testnet"
+   },
+   {
+    "day": 103,
+    "amount": "80000000",
+    "payer": "payer3.testnet"
+   },
+   {
+    "day": 104,
+    "amount": "80000000",
+    "payer": "payer4.testnet"
+   },
+   {
+    "day": 105,
+    "amount": "80000000",
+    "payer": "payer5.testnet"
+   },
+   {
+    "day": 106,
+    "amount": "80000000",
+    "payer": "payer6.testnet"
+   },
+   {
+    "day": 107,
+    "amount": "80000000",
+    "payer": "payer7.testnet"
+   },
+   {
+    "day": 108,
+    "amount": "80000000",
+    "payer": "payer8.testnet"
+   },
+   {
+    "day": 109,
+    "amount": "80000000",
+    "payer": "payer9.testnet"
+   },
+   {
+    "day": 110,
+    "amount": "80000000",
+    "payer": "payer10.testnet"
+   },
+   {
+    "day": 111,
+    "amount": "80000000",
+    "payer": "payer11.testnet"
+   },
+   {
+    "day": 112,
+    "amount": "80000000",
+    "payer": "payer0.testnet"
+   },
+   {
+    "day": 113,
+    "amount": "80000000",
+    "payer": "payer1.testnet"
+   },
+   {
+    "day": 114,
+    "amount": "80000000",
+    "payer": "payer2.testnet"
+   },
+   {
+    "day": 115,
+    "amount": "80000000",
+    "payer": "payer3.testnet"
+   },
+   {
+    "day": 116,
+    "amount": "80000000",
+    "payer": "payer4.testnet"
+   },
+   {
+    "day": 117,
+    "amount": "80000000",
+    "payer": "payer5.testnet"
+   },
+   {
+    "day": 118,
+    "amount": "80000000",
+    "payer": "payer6.testnet"
+   },
+   {
+    "day": 119,
+    "amount": "80000000",
+    "payer": "payer7.testnet"
+   },
+   {
+    "day": 120,
+    "amount": "80000000",
+    "payer": "payer8.testnet"
+   },
+   {
+    "day": 121,
+    "amount": "80000000",
+    "payer": "payer9.testnet"
+   },
+   {
+    "day": 122,
+    "amount": "80000000",
+    "payer": "payer10.testnet"
+   },
+   {
+    "day": 123,
+    "amount": "80000000",
+    "payer": "payer11.testnet"
+   },
+   {
+    "day": 124,
+    "amount": "80000000",
+    "payer": "payer0.testnet"
+   },
+   {
+    "day": 125,
+    "amount": "80000000",
+    "payer": "payer1.testnet"
+   },
+   {
+    "day": 126,
+    "amount": "80000000",
+    "payer": "payer2.testnet"
+   },
+   {
+    "day": 127,
+    "amount": "80000000",
+    "payer": "payer3.testnet"
+   },
+   {
+    "day": 128,
+    "amount": "80000000",
+    "payer": "payer4.testnet"
+   },
+   {
+    "day": 129,
+    "amount": "80000000",
+    "payer": "payer5.testnet"
+   }
+  ],
+  "expect": {
+   "advance_bps": 6000,
+   "bonus_bps": 2000,
+   "active_days": 30,
+   "distinct_payers": 12,
+   "top_payer_bps": 1000,
+   "volatility_bps": 0,
+   "trailing_volume": "2400000000"
+  }
+ },
+ {
+  "name": "spiky-creator",
+  "routed_share_bps": 6000,
+  "inflows": [
+   {
+    "day": 102,
+    "amount": "600000000",
+    "payer": "fan2.testnet"
+   },
+   {
+    "day": 109,
+    "amount": "150000000",
+    "payer": "fan1.testnet"
+   },
+   {
+    "day": 117,
+    "amount": "900000000",
+    "payer": "fan1.testnet"
+   },
+   {
+    "day": 124,
+    "amount": "300000000",
+    "payer": "fan0.testnet"
+   },
+   {
+    "day": 129,
+    "amount": "450000000",
+    "payer": "fan1.testnet"
+   }
+  ],
+  "expect": {
+   "advance_bps": 4600,
+   "bonus_bps": 600,
+   "active_days": 5,
+   "distinct_payers": 3,
+   "top_payer_bps": 6250,
+   "volatility_bps": 16666,
+   "trailing_volume": "2400000000"
+  }
+ },
+ {
+  "name": "single-payer-whale",
+  "routed_share_bps": 3000,
+  "inflows": [
+   {
+    "day": 100,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 102,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 104,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 106,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 108,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 110,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 112,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 114,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 116,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 118,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 120,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 122,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 124,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 126,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   },
+   {
+    "day": 128,
+    "amount": "100000000",
+    "payer": "whale.testnet"
+   }
+  ],
+  "expect": {
+   "advance_bps": 4500,
+   "bonus_bps": 500,
+   "active_days": 15,
+   "distinct_payers": 1,
+   "top_payer_bps": 10000,
+   "volatility_bps": 10000,
+   "trailing_volume": "1500000000"
+  }
+ },
+ {
+  "name": "empty",
+  "routed_share_bps": 0,
+  "inflows": [],
+  "expect": {
+   "advance_bps": 4000,
+   "bonus_bps": 0,
+   "active_days": 0,
+   "distinct_payers": 0,
+   "top_payer_bps": 10000,
+   "volatility_bps": 4294967295,
+   "trailing_volume": "0"
+  }
+ },
+ {
+  "name": "old-data-outside-window",
+  "routed_share_bps": 10000,
+  "inflows": [
+   {
+    "day": 10,
+    "amount": "500000000",
+    "payer": "a.testnet"
+   },
+   {
+    "day": 100,
+    "amount": "10000000",
+    "payer": "b.testnet"
+   }
+  ],
+  "expect": {
+   "advance_bps": 4400,
+   "bonus_bps": 400,
+   "active_days": 1,
+   "distinct_payers": 1,
+   "top_payer_bps": 10000,
+   "volatility_bps": 19333,
+   "trailing_volume": "10000000"
+  }
+ }
+]

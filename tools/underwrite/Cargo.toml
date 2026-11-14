@@ -1,0 +1,13 @@
+[package]
+name = "underwrite"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+underwriting = { path = "../../contracts/underwriting" }
+serde_json = "1"
+ed25519-dalek = "2"
+base64 = "0.22"

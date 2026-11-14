@@ -1,0 +1,51 @@
+[
+  {
+    "id": "a-landing",
+    "from": 0,
+    "to": 8.19,
+    "kind": "landing",
+    "dur": 8.19
+  },
+  {
+    "id": "b-dashboard",
+    "from": 8.19,
+    "to": 30.61,
+    "kind": "dashboard",
+    "dur": 22.42
+  },
+  {
+    "id": "c1-pay",
+    "from": 30.61,
+    "to": 39.935,
+    "kind": "pay",
+    "dur": 9.33
+  },
+  {
+    "id": "c2-money",
+    "from": 39.935,
+    "to": 49.26,
+    "kind": "money",
+    "dur": 9.32
+  },
+  {
+    "id": "d-loans",
+    "from": 49.26,
+    "to": 72.03,
+    "kind": "loans",
+    "dur": 22.77
+  },
+  {
+    "id": "e-vault",
+    "from": 72.03,
+    "to": 88.56,
+    "kind": "vault",
+    "dur": 16.53
+  },
+  {
+    "id": "f-limits",
+    "from": 88.56,
+    "to": 107.47,
+    "kind": "limits",
+    "dur": 18.91
+  }
+]

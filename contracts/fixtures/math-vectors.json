@@ -1,0 +1,278 @@
+[
+ {
+  "name": "limit-agent-2400",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "limit",
+   "routed": "2400000000",
+   "advance_bps": 4000
+  },
+  "expect": {
+   "limit": "960000000"
+  }
+ },
+ {
+  "name": "limit-creator-2400",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "limit",
+   "routed": "2400000000",
+   "advance_bps": 3000
+  },
+  "expect": {
+   "limit": "720000000"
+  }
+ },
+ {
+  "name": "limit-capped",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "limit",
+   "routed": "5400000000",
+   "advance_bps": 4000
+  },
+  "expect": {
+   "limit": "2000000000"
+  }
+ },
+ {
+  "name": "limit-zero-routed-no-starter",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "limit",
+   "routed": "0",
+   "advance_bps": 4000
+  },
+  "expect": {
+   "limit": "0"
+  }
+ },
+ {
+  "name": "fee-500-rounds-exact",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "fee",
+   "principal": "500000000"
+  },
+  "expect": {
+   "fee": "15000000"
+  }
+ },
+ {
+  "name": "fee-dust-rounds-up",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "fee",
+   "principal": "1"
+  },
+  "expect": {
+   "fee": "1"
+  }
+ },
+ {
+  "name": "fee-33-rounds-up",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "fee",
+   "principal": "33"
+  },
+  "expect": {
+   "fee": "1"
+  }
+ },
+ {
+  "name": "payment-500-split-20",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "payment",
+   "amount": "500000000",
+   "split_bps": 2000,
+   "debt_left": "515000000"
+  },
+  "expect": {
+   "repay": "100000000",
+   "to_business": "400000000",
+   "debt_left": "415000000"
+  }
+ },
+ {
+  "name": "payment-final-clamped",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "payment",
+   "amount": "1500000000",
+   "split_bps": 2000,
+   "debt_left": "215000000"
+  },
+  "expect": {
+   "repay": "215000000",
+   "to_business": "1285000000",
+   "debt_left": "0"
+  }
+ },
+ {
+  "name": "payment-dust-1-unit",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "payment",
+   "amount": "1",
+   "split_bps": 2000,
+   "debt_left": "515000000"
+  },
+  "expect": {
+   "repay": "1",
+   "to_business": "0",
+   "debt_left": "514999999"
+  }
+ },
+ {
+  "name": "est-days-500-draw",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "est_days",
+   "debt_left": "515000000",
+   "routed": "2400000000",
+   "split_bps": 2000
+  },
+  "expect": {
+   "days": 33
+  }
+ },
+ {
+  "name": "est-days-no-debt",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000
+  },
+  "state": {},
+  "action": {
+   "fn": "est_days",
+   "debt_left": "0",
+   "routed": "2400000000",
+   "split_bps": 2000
+  },
+  "expect": {
+   "days": null
+  }
+ },
+ {
+  "name": "golden-demo-agent",
+  "params": {
+   "fee_bps": 300,
+   "per_biz_cap": "2000000000",
+   "window_days": 30,
+   "reserve_bps": 5000,
+   "routed_30d": "2400000000",
+   "advance_bps": 4000,
+   "split_bps": 2000,
+   "vault_cash": "21500000000"
+  },
+  "state": {
+   "kind": "agent"
+  },
+  "action": {
+   "fn": "scenario",
+   "steps": [
+    {
+     "op": "draw",
+     "amount": "500000000"
+    },
+    {
+     "op": "pay",
+     "amount": "500000000"
+    },
+    {
+     "op": "pay",
+     "amount": "1000000000"
+    },
+    {
+     "op": "pay",
+     "amount": "1500000000"
+    }
+   ]
+  },
+  "expect": {
+   "limit_before": "960000000",
+   "available_after_draw": "445000000",
+   "repays": [
+    "100000000",
+    "200000000",
+    "215000000"
+   ],
+   "debt_left": [
+    "415000000",
+    "215000000",
+    "0"
+   ],
+   "limit_after": "2000000000"
+  }
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "create:usdc.revvault-dep-17094.testnet": "4vwNyhZa2fMhcsw9wyzcWvrDAyywNBsPzWeGqHHTaAn4",
+  "deploy:usdc.revvault-dep-17094.testnet": "8tjhuRSGgeu7ZPo8gwdG4zAhWyibHoYADkKr1137C3gc",
+  "new:usdc": "8irF9TfpS9NW6zGy3vRvRhT6nAnesEeZdhd8PEnUaa7q",
+  "create:revvault.revvault-dep-17094.testnet": "B8rcHCUq8fWJLWKDdU8ugLhojcG4oSvn2vUs5T8uHSeE",
+  "deploy:revvault.revvault-dep-17094.testnet": "FHy9jpBmCPsWx9m1zXRVW1kpXtPqcGnAHGJuMzYGVEKY",
+  "new:revvault": "8E3qgfqLF7J9goF5Q9iywcyx83TCiZqRfLUYLpqe9qiQ",
+  "create:biz-agent.revvault-dep-17094.testnet": "FjgSFpZNYL7W9JFSvyi2tKJ41A39x5dDDDbooiybXmEx",
+  "create:biz-creator.revvault-dep-17094.testnet": "AA64ZjKNcXSWiqpG8JUrHmSx1K8yVF8DcgbPhpwh75YJ",
+  "create:payer.revvault-dep-17094.testnet": "5iCqGAL6wp7BDBeXT8TSFRtagBdQb8q6UDwGvWZkf2x2",
+  "create:gpu-provider.revvault-dep-17094.testnet": "64W8asjRXxzPaR9q3shdy6g3D6hHra2hNoJwAp4t36UP",
+  "create:llm-api.revvault-dep-17094.testnet": "5Rd6CQWDv77J2hkySsJ6pnLi1cRn7ffBGBdRnFEwTxJc",
+  "create:data-feed.revvault-dep-17094.testnet": "7JZguzsTaJRtVyG5YJvLU8VgfK1zpvCNu51Jx1rAS8NJ"
+}

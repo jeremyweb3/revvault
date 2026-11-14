@@ -1,0 +1,49 @@
+{
+  "source": "audio",
+  "tail": 2.5,
+  "total": 114.92,
+  "paragraphs": [
+    {
+      "i": 0,
+      "text": "AI businesses can earn money, but they cannot borrow it. RevVault is a credit line that repays itself, built on NEAR for the hackathon.",
+      "start": 0.3,
+      "end": 8.19
+    },
+    {
+      "i": 1,
+      "text": "Here is the app, running on NEAR testnet. Every number in the app is read live from the deployed contracts. In this recording I only read from the chain, because signing needs a testnet wallet. The dashboard is one guided path: connect a wallet, create a pay link, get paid through it, draw credit, and repay.",
+      "start": 8.19,
+      "end": 30.61
+    },
+    {
+      "i": 2,
+      "text": "The key idea is the pay link. A customer pays the business through RevVault, and the contract splits that payment on the spot. Part of it repays the open loan, and the rest goes straight to the business. There is no repay button and no keeper. Only revenue that goes through the pay link counts as collateral.",
+      "start": 30.61,
+      "end": 49.26
+    },
+    {
+      "i": 3,
+      "text": "That routed revenue sets the credit limit, a share of the last thirty days, up to a cap. When the business draws, the money is paid straight to the vendor account it names, and the contract rejects the borrower's own account as payee. The fee is flat, so the borrower sees exactly what they will repay before confirming.",
+      "start": 49.26,
+      "end": 72.03
+    },
+    {
+      "i": 4,
+      "text": "On the other side are the liquidity providers. Their deposits fund the vault, and every draw becomes a note you can inspect, with its status and how much has been repaid. A reserve takes the first loss, and the yield figure is illustrative, not a promise.",
+      "start": 72.03,
+      "end": 88.56
+    },
+    {
+      "i": 5,
+      "text": "Now the honest part. This is a testnet prototype with a mock USDC token, and the revenue history was seeded for the demo. Repayment is enforced by economics, not by law. If customers do not pay through the pay link, the vault cannot see that revenue. And the contracts are not audited.",
+      "start": 88.56,
+      "end": 107.47
+    },
+    {
+      "i": 6,
+      "text": "RevVault. Credit that repays itself. Built at the NEAR Hackathon.",
+      "start": 107.47,
+      "end": 112.42
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# secrets and keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.near-credentials/
+neardev/
+
+# build output
+target/
+node_modules/
+.next/
+dist/
+out/
+*.wasm
+
+# local tooling
+.DS_Store
+*.log
+
+# agent tooling and third-party saved pages
+.claude/
+Backgrounds Supply*.html
+
+# demo video build artefacts (the video itself is posted on X)
+demo-assets/video/clips/
+demo-assets/video/out/
+demo-assets/video/audio/source/
+demo-assets/video/remotion/node_modules
+demo-assets/video/remotion/public

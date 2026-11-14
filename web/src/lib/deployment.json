@@ -1,0 +1,117 @@
+{
+  "network": "testnet",
+  "deployer": "revvault-dep-17094.testnet",
+  "deployed_at": "2026-11-08T06:01:06.528Z",
+  "contracts": {
+    "revvault": "revvault.revvault-dep-17094.testnet",
+    "usdc": "usdc.revvault-dep-17094.testnet"
+  },
+  "demo_accounts": {
+    "biz_agent": "biz-agent.revvault-dep-17094.testnet",
+    "biz_creator": "biz-creator.revvault-dep-17094.testnet",
+    "payer": "payer.revvault-dep-17094.testnet",
+    "vendors": [
+      "gpu-provider.revvault-dep-17094.testnet",
+      "llm-api.revvault-dep-17094.testnet",
+      "data-feed.revvault-dep-17094.testnet"
+    ]
+  },
+  "code_hashes": {
+    "revvault": "6qbsbTKxE45XZTqsYnTa4WD3iyRxVX2qaWxfXMbeLmDf",
+    "usdc": "HzkYjzCpHQRFAA2kZLrEKrcqhzzz8dUtxtKduR49Vew4"
+  },
+  "txs": {
+    "create:usdc.revvault-dep-17094.testnet": "4vwNyhZa2fMhcsw9wyzcWvrDAyywNBsPzWeGqHHTaAn4",
+    "deploy:usdc.revvault-dep-17094.testnet": "8tjhuRSGgeu7ZPo8gwdG4zAhWyibHoYADkKr1137C3gc",
+    "new:usdc": "8irF9TfpS9NW6zGy3vRvRhT6nAnesEeZdhd8PEnUaa7q",
+    "create:revvault.revvault-dep-17094.testnet": "B8rcHCUq8fWJLWKDdU8ugLhojcG4oSvn2vUs5T8uHSeE",
+    "deploy:revvault.revvault-dep-17094.testnet": "FHy9jpBmCPsWx9m1zXRVW1kpXtPqcGnAHGJuMzYGVEKY",
+    "new:revvault": "8E3qgfqLF7J9goF5Q9iywcyx83TCiZqRfLUYLpqe9qiQ",
+    "create:biz-agent.revvault-dep-17094.testnet": "FjgSFpZNYL7W9JFSvyi2tKJ41A39x5dDDDbooiybXmEx",
+    "create:biz-creator.revvault-dep-17094.testnet": "AA64ZjKNcXSWiqpG8JUrHmSx1K8yVF8DcgbPhpwh75YJ",
+    "create:payer.revvault-dep-17094.testnet": "5iCqGAL6wp7BDBeXT8TSFRtagBdQb8q6UDwGvWZkf2x2",
+    "create:gpu-provider.revvault-dep-17094.testnet": "64W8asjRXxzPaR9q3shdy6g3D6hHra2hNoJwAp4t36UP",
+    "create:llm-api.revvault-dep-17094.testnet": "5Rd6CQWDv77J2hkySsJ6pnLi1cRn7ffBGBdRnFEwTxJc",
+    "create:data-feed.revvault-dep-17094.testnet": "7JZguzsTaJRtVyG5YJvLU8VgfK1zpvCNu51Jx1rAS8NJ"
+  },
+  "explorer": {
+    "revvault": "https://explorer.testnet.near.org/accounts/revvault.revvault-dep-17094.testnet",
+    "usdc": "https://explorer.testnet.near.org/accounts/usdc.revvault-dep-17094.testnet",
+    "txs": {
+      "create:usdc.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/4vwNyhZa2fMhcsw9wyzcWvrDAyywNBsPzWeGqHHTaAn4",
+      "deploy:usdc.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/8tjhuRSGgeu7ZPo8gwdG4zAhWyibHoYADkKr1137C3gc",
+      "new:usdc": "https://explorer.testnet.near.org/transactions/8irF9TfpS9NW6zGy3vRvRhT6nAnesEeZdhd8PEnUaa7q",
+      "create:revvault.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/B8rcHCUq8fWJLWKDdU8ugLhojcG4oSvn2vUs5T8uHSeE",
+      "deploy:revvault.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/FHy9jpBmCPsWx9m1zXRVW1kpXtPqcGnAHGJuMzYGVEKY",
+      "new:revvault": "https://explorer.testnet.near.org/transactions/8E3qgfqLF7J9goF5Q9iywcyx83TCiZqRfLUYLpqe9qiQ",
+      "create:biz-agent.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/FjgSFpZNYL7W9JFSvyi2tKJ41A39x5dDDDbooiybXmEx",
+      "create:biz-creator.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/AA64ZjKNcXSWiqpG8JUrHmSx1K8yVF8DcgbPhpwh75YJ",
+      "create:payer.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/5iCqGAL6wp7BDBeXT8TSFRtagBdQb8q6UDwGvWZkf2x2",
+      "create:gpu-provider.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/64W8asjRXxzPaR9q3shdy6g3D6hHra2hNoJwAp4t36UP",
+      "create:llm-api.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/5Rd6CQWDv77J2hkySsJ6pnLi1cRn7ffBGBdRnFEwTxJc",
+      "create:data-feed.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/7JZguzsTaJRtVyG5YJvLU8VgfK1zpvCNu51Jx1rAS8NJ"
+    }
+  },
+  "deployer_balance_near": "3.9426",
+  "seed": {
+    "seeded_at": "2026-11-08T06:06:20.218Z",
+    "note_ids": {
+      "agent": [
+        "ln_001"
+      ],
+      "creator": [
+        "ln_002"
+      ]
+    },
+    "txs": {
+      "register:biz-agent.revvault-dep-17094.testnet": "AcKRi8UHRZdiJm4AD6pM4qEyhef2e39k3MfbSugq1DHx",
+      "register:biz-creator.revvault-dep-17094.testnet": "8EGEhJ1YFSDRjiTumexhVr41itoN1rcCXQWiAiKBx22c",
+      "mint:payer": "d6jgUDRhqgSS5Mt41hEUq5wpViJfrGExzxXsHB1dpEL",
+      "pay:agent:1": "3Y6iUB1HsdHaDBELuq4rHRJDNcCAhtMDHmGc3AD9ji44",
+      "pay:agent:2": "FN7tRrTuNDYqSfb8bbNq4LwwG72pshi4VFfU55S85Kaa",
+      "pay:agent:3": "4QCmhacoZieUC8j62UrDL7TmHt5K28BgV8dHuTJNCo6U",
+      "pay:creator:1": "mnjSQ3sM6gKhdp2eB1gxjxeiNCnW7doey6rD8v4AsaB",
+      "pay:creator:2": "3bd4z6VVuGpsJgACtnbCBsFud26LoKfVKBQx9TN7JY1R",
+      "pay:creator:3": "Ai8m3cQjcbowJ6XupynQaSUrrw12ykRjHTZaajfnkY3N",
+      "draw:agent": "C3eSDwguwiJnHMF9zyupwaEATaKnhpVeRVRZQ358pgpt",
+      "repay_share:agent": "77gor4avzA5CnsgAzNmDc84GFLRfwxqk5xF4LJwdj7P7",
+      "pay:agent:repay": "DBUCiZ67xSRfqnTiVx5FdHqpryZsack6K5Raz18CGhEx",
+      "draw:creator": "Ek3bQ6LhEYzY46FhkmMuVY88oRUfg9ULx8o2mfDzeeit",
+      "mint:lp": "3RPVTVriVWr3jgmPLvwttQAk2EjxCZ4Ry8o26mCLRsLL",
+      "lp_deposit": "9DqPNvncVHNpo8P7azfVPFzYituKwp3qc4bg3T4ZUrXE",
+      "storage_deposit:revvault": "2M3PW681aabKTUkjHdTf9d1UBor4uoikLLvAPTjBDMZ8",
+      "storage_deposit:biz-agent": "9Ntwyso9E88Bcn8FEYhXhu4UjtKbvho4i7fh3mHjiyt7",
+      "storage_deposit:biz-creator": "GzkdjkhvV1hmSwH3kPZiKNNC5VPLmzsYcNYwEmPS415S",
+      "storage_deposit:payer": "8xxRLFp1gGSBdsimnaabPapyag6khYsJcHdLC6FQptq5",
+      "storage_deposit:deployer": "BN7HGdrroNK7Zj3nWLgd9THHckqny6ExUvjyAcT4Jzre",
+      "storage_deposit:gpu-provider": "7NPdAjnaDYqnoiVWxqJGH11NkYwRBErcMa7eEpzqwquB",
+      "storage_deposit:llm-api": "9AVsXhXyXxy39B8WuyEsSu1qu9jQgop4iR9uuPrZoPu",
+      "storage_deposit:data-feed": "6LhfcUGcoQZtUaPMP8SG5n39eRZuebrVZgRWXpmaH5c5"
+    },
+    "explorer": {
+      "register:biz-agent.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/AcKRi8UHRZdiJm4AD6pM4qEyhef2e39k3MfbSugq1DHx",
+      "register:biz-creator.revvault-dep-17094.testnet": "https://explorer.testnet.near.org/transactions/8EGEhJ1YFSDRjiTumexhVr41itoN1rcCXQWiAiKBx22c",
+      "mint:payer": "https://explorer.testnet.near.org/transactions/d6jgUDRhqgSS5Mt41hEUq5wpViJfrGExzxXsHB1dpEL",
+      "pay:agent:1": "https://explorer.testnet.near.org/transactions/3Y6iUB1HsdHaDBELuq4rHRJDNcCAhtMDHmGc3AD9ji44",
+      "pay:agent:2": "https://explorer.testnet.near.org/transactions/FN7tRrTuNDYqSfb8bbNq4LwwG72pshi4VFfU55S85Kaa",
+      "pay:agent:3": "https://explorer.testnet.near.org/transactions/4QCmhacoZieUC8j62UrDL7TmHt5K28BgV8dHuTJNCo6U",
+      "pay:creator:1": "https://explorer.testnet.near.org/transactions/mnjSQ3sM6gKhdp2eB1gxjxeiNCnW7doey6rD8v4AsaB",
+      "pay:creator:2": "https://explorer.testnet.near.org/transactions/3bd4z6VVuGpsJgACtnbCBsFud26LoKfVKBQx9TN7JY1R",
+      "pay:creator:3": "https://explorer.testnet.near.org/transactions/Ai8m3cQjcbowJ6XupynQaSUrrw12ykRjHTZaajfnkY3N",
+      "draw:agent": "https://explorer.testnet.near.org/transactions/C3eSDwguwiJnHMF9zyupwaEATaKnhpVeRVRZQ358pgpt",
+      "repay_share:agent": "https://explorer.testnet.near.org/transactions/77gor4avzA5CnsgAzNmDc84GFLRfwxqk5xF4LJwdj7P7",
+      "pay:agent:repay": "https://explorer.testnet.near.org/transactions/DBUCiZ67xSRfqnTiVx5FdHqpryZsack6K5Raz18CGhEx",
+      "draw:creator": "https://explorer.testnet.near.org/transactions/Ek3bQ6LhEYzY46FhkmMuVY88oRUfg9ULx8o2mfDzeeit",
+      "mint:lp": "https://explorer.testnet.near.org/transactions/3RPVTVriVWr3jgmPLvwttQAk2EjxCZ4Ry8o26mCLRsLL",
+      "lp_deposit": "https://explorer.testnet.near.org/transactions/9DqPNvncVHNpo8P7azfVPFzYituKwp3qc4bg3T4ZUrXE",
+      "storage_deposit:revvault": "https://explorer.testnet.near.org/transactions/2M3PW681aabKTUkjHdTf9d1UBor4uoikLLvAPTjBDMZ8",
+      "storage_deposit:biz-agent": "https://explorer.testnet.near.org/transactions/9Ntwyso9E88Bcn8FEYhXhu4UjtKbvho4i7fh3mHjiyt7",
+      "storage_deposit:biz-creator": "https://explorer.testnet.near.org/transactions/GzkdjkhvV1hmSwH3kPZiKNNC5VPLmzsYcNYwEmPS415S",
+      "storage_deposit:payer": "https://explorer.testnet.near.org/transactions/8xxRLFp1gGSBdsimnaabPapyag6khYsJcHdLC6FQptq5",
+      "storage_deposit:deployer": "https://explorer.testnet.near.org/transactions/BN7HGdrroNK7Zj3nWLgd9THHckqny6ExUvjyAcT4Jzre",
+      "storage_deposit:gpu-provider": "https://explorer.testnet.near.org/transactions/7NPdAjnaDYqnoiVWxqJGH11NkYwRBErcMa7eEpzqwquB",
+      "storage_deposit:llm-api": "https://explorer.testnet.near.org/transactions/9AVsXhXyXxy39B8WuyEsSu1qu9jQgop4iR9uuPrZoPu",
+      "storage_deposit:data-feed": "https://explorer.testnet.near.org/transactions/6LhfcUGcoQZtUaPMP8SG5n39eRZuebrVZgRWXpmaH5c5"
+    }
+  }
+}

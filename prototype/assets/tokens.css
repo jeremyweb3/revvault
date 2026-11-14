@@ -1,0 +1,79 @@
+:root{
+  --blue-50:#F0F3FF;
+  --blue-100:#E0E7FF;
+  --blue-200:#C2CFFF;
+  --blue-300:#9EB3FF;
+  --blue-400:#7C98FF;
+  --blue-500:#3E68FE;
+  --blue-600:#1E4DF6;
+  --blue-700:#163DCA;
+  --blue-800:#18318B;
+  --blue-900:#122054;
+  --blue-hover:#2F5BFB;
+
+  --accent:var(--blue-500);
+  --accent-text:var(--blue-400);
+  --accent-ink:#fff;
+  --accent-soft:rgba(62,104,254,.16);
+  --accent-line:rgba(62,104,254,.5);
+  --glow-btn:0 10px 22px rgba(62,104,254,.30);
+  --glow-tile:radial-gradient(50% 50% at 50% 0,rgba(62,104,254,.30) 0%,#040611 100%);
+  --glow-card:radial-gradient(120% 100% at 100% 0,rgba(62,104,254,.35) 0%,rgba(62,104,254,0) 60%),rgba(255,255,255,.02);
+
+  --page:#000;
+  --card:#040611;
+  --card-2:#0B0F1C;
+  --hover:#121828;
+  --ink:#030611;
+  --glass:rgba(18,18,20,.55);
+  --glass-menu:rgba(18,18,20,.94);
+  --glass-fill:rgba(255,255,255,.10);
+
+  --line:rgba(255,255,255,.08);
+  --line-2:rgba(255,255,255,.14);
+  --line-hover:rgba(255,255,255,.26);
+
+  --text:#FFFFFF;
+  --link:rgba(255,255,255,.65);
+  --mute:rgba(255,255,255,.72);
+  --faint:#99A3B8;
+
+  --up:#54D6A0;
+  --down:#FF7E61;
+  --warn:#F2BE5C;
+  --repay:#F2BE5C;
+  --ok:#86E3B5;
+  --op:#5CD3FF;
+  --violet:#C59BFF;
+
+  --r-card:24px;
+  --r-panel:32px;
+  --r-item:16px;
+  --r-tile:12px;
+  --r-pill:999px;
+
+  --glide:cubic-bezier(.22,1,.36,1);
+  --spring:cubic-bezier(.34,1.3,.64,1);
+
+  --sans:"Mona Sans",system-ui,-apple-system,sans-serif;
+  --serif:"Instrument Serif","Mona Sans",Georgia,serif;
+}
+
+.rv-eyebrow{display:block;font:700 14px/1.1 var(--sans);letter-spacing:4.2px;text-transform:uppercase;color:var(--accent)}
+
+.rv-em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--accent-text)}
+
+.rv-btn-white,.rv-btn-glass{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 28px;border-radius:var(--r-pill);font:700 18px/1 var(--sans);letter-spacing:-.02em;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--glide),color .25s var(--glide),box-shadow .25s var(--glide),transform .15s var(--glide)}
+.rv-btn-white svg,.rv-btn-glass svg{width:18px;height:18px;flex:none}
+.rv-btn-white:active,.rv-btn-glass:active{transform:scale(.98)}
+
+.rv-btn-white{background:#fff;color:var(--ink)}
+.rv-btn-white:hover{background:var(--accent);color:#fff;box-shadow:var(--glow-btn)}
+.rv-btn-white.sm{height:33px;padding:0 16px;font-size:13px;font-weight:500;letter-spacing:0}
+
+.rv-btn-glass{position:relative;background:var(--glass-fill);color:#fff;box-shadow:inset 0 .5px rgba(255,255,255,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.rv-btn-glass:hover{background:rgba(255,255,255,.18)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
