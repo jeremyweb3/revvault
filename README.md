@@ -98,7 +98,7 @@ Other commands: `cargo check` (Rust, not re-run for this README), `cd scripts &&
 
 ## Demo
 
-A 2-minute demo video is posted on X, tagged @NEARProtocol and #NEARHackathon. It was recorded read-only against the testnet deployment: it shows live reads, not signed transactions.
+The demo video (1:54) is posted on X, tagged @NEARProtocol and #NEARHackathon: https://x.com/cevintwc/status/2121689935447273897 . It was recorded read-only against the testnet deployment: it shows live reads, not signed transactions.
 
 ## Honest limits
 
