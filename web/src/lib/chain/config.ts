@@ -10,6 +10,8 @@ const env = import.meta.env
 export const cfg = {
   network: NETWORK,
   rpcUrl: pick(env.VITE_NEAR_RPC_URL, 'https://test.rpc.fastnear.com'),
+  // tried in turn when the primary rate-limits or is unreachable
+  rpcFallbacks: ['https://rpc.testnet.near.org', 'https://rpc.testnet.fastnear.com'],
   revvault: pick(env.VITE_REVVAULT_CONTRACT_ID, deployment.contracts.revvault),
   usdc: pick(env.VITE_USDC_CONTRACT_ID, deployment.contracts.usdc),
   deployer: deployment.deployer,
