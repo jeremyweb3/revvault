@@ -4,6 +4,9 @@ Revenue-routed credit for AI businesses on **NEAR**. A customer pays through a R
 
 Built for the NEAR Hackathon. Tracks: **04 Autonomous Business** (primary), **08 Real-World Money**.
 
+- **Live app:** https://jeremyweb3.github.io/revvault/ (static build, reads the testnet contracts)
+- **AI reviewers / agents:** start with [`AGENTS.md`](AGENTS.md) (map, verification, what is not claimed) and [`llms.txt`](llms.txt). One command checks the on-chain claims: `bash scripts/verify-onchain.sh`
+
 > Testnet prototype. Mock USDC. Unaudited. Repayment is economic, not legal. APY is illustrative. Every limit is listed in [Honest limits](#honest-limits).
 
 ```mermaid
@@ -20,7 +23,7 @@ flowchart LR
 
 Everything below is checkable without a wallet and without trusting this README.
 
-**1. Read the live contracts** (NEAR testnet, public RPC). Amounts are micro-USDC (6 decimals).
+**1. Read the live contracts** (NEAR testnet, public RPC). The one-command version is `bash scripts/verify-onchain.sh`, which asserts the numbers below and prints PASS/FAIL. The manual version, with amounts in micro-USDC (6 decimals):
 
 ```bash
 RPC=https://test.rpc.fastnear.com

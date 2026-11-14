@@ -1,5 +1,11 @@
 # STATUS
 
+## Update 2026-11-15 (submission)
+- Public repo: https://github.com/jeremyweb3/revvault. Live static app: https://jeremyweb3.github.io/revvault/ (GitHub Pages, build of `web/`).
+- `web/` was redesigned (guided dashboard path, bento cards, accessibility pass: axe-core 0 violations on all pages at 1440 and 375 px). Landing and README copy were corrected: the contract has **no** vendor allowlist and no max-draw setting; it only rejects the business itself, the vault and the token as payee.
+- Added `scripts/verify-onchain.sh` (wallet-free PASS/FAIL check of the live contracts), `AGENTS.md`, `llms.txt`, and `demo-assets/video/` (read-only demo video pipeline).
+- Testnet state at that time: vault tvl 10,007.50 USDC, reserve 7.50, `ln_001` settled, `ln_002` open. Still true: write paths in the UI are not exercised end to end (they need a throwaway wallet signature).
+
 Last updated 2026-11-08 (web app rewired to testnet). Testnet only, throwaway deployer, mock USDC, unaudited.
 
 ## Testnet deploy (done 2026-11-08)

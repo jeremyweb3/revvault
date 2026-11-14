@@ -1,0 +1,23 @@
+# RevVault
+
+> Revenue-routed credit for AI businesses on NEAR testnet (NEAR Hackathon 2026, tracks 04 Autonomous Business and 08 Real-World Money). Customers pay through a pay link; the contract splits each payment in the same transaction: part repays the loan, the rest goes to the business. Testnet, mock USDC, unaudited.
+
+Verify in seconds without a wallet: `bash scripts/verify-onchain.sh` in https://github.com/jeremyweb3/revvault (reads the live contracts, prints PASS/FAIL).
+
+## Start here
+- [AGENTS.md](https://github.com/jeremyweb3/revvault/blob/main/AGENTS.md): what it is, how to verify, repo map, what is NOT claimed
+- [README.md](https://github.com/jeremyweb3/revvault/blob/main/README.md): overview, claim-to-evidence table, honest limits
+- [STATUS.md](https://github.com/jeremyweb3/revvault/blob/main/STATUS.md): testnet accounts and transaction hashes
+- [deployments/testnet.json](https://github.com/jeremyweb3/revvault/blob/main/deployments/testnet.json): machine-readable deployment record
+
+## Code
+- [contracts/revvault/src/lib.rs](https://github.com/jeremyweb3/revvault/blob/main/contracts/revvault/src/lib.rs): the vault contract (Rust, near-sdk 5.x)
+- [web/](https://github.com/jeremyweb3/revvault/blob/main/web/): Vite + TypeScript app, reads the contracts over JSON-RPC
+- [scripts/](https://github.com/jeremyweb3/revvault/blob/main/scripts/): verify, deploy, seed, demo agent
+
+## Docs
+- [docs/tech/contracts-spec.md](https://github.com/jeremyweb3/revvault/blob/main/docs/tech/contracts-spec.md): contract state, methods, credit and repay math
+- [docs/research/](https://github.com/jeremyweb3/revvault/blob/main/docs/research/): competitive landscape, novelty and risks
+
+## Optional
+- [PRD.md](https://github.com/jeremyweb3/revvault/blob/main/PRD.md), [docs/ui/](https://github.com/jeremyweb3/revvault/blob/main/docs/ui/), [docs/handoffs/](https://github.com/jeremyweb3/revvault/blob/main/docs/handoffs/): product and build history
